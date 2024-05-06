@@ -1,18 +1,11 @@
-import { Component, PropsWithChildren } from 'react'
-import './app.scss'
+import { Component, PropsWithChildren } from 'react';
+import './app.scss';
 
-class App extends Component<PropsWithChildren>  {
-
-  componentDidMount () {}
-
-  componentDidShow () {}
-
-  componentDidHide () {}
-
+class App extends Component<PropsWithChildren> {
   // this.props.children 是将要会渲染的页面
-  render () {
-    return this.props.children
+  render() {
+    return this.props.children;
   }
 }
 
-export default App
+export default App;
