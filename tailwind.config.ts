@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss';
 
-const config =  {
+const config = {
   // 不在 content 包括的文件内编写的 class，不会生成对应的工具类
   content: ['./public/index.html', './src/**/*.{html,js,ts,jsx,tsx,vue}'],
   theme: {

@@ -30,6 +30,7 @@
     "dev:quickapp": "npm run build:quickapp -- --watch",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
     "prepare": "husky install",
+    "prettier": "prettier --write .",
     "postinstall": "weapp-tw patch"
   },
   "browserslist": [
