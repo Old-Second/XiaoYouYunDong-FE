@@ -1,3 +1,5 @@
+import { UnifiedWebpackPluginV5 } from 'weapp-tailwindcss/webpack';
+
 const config = {
   projectName: 'XiaoYouYunDong-FE',
   date: '2024-5-6',
@@ -39,6 +41,23 @@ const config = {
           generateScopedName: '[name]__[local]___[hash:base64:5]',
         },
       },
+    },
+    webpackChain(chain) {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
+      chain.merge({
+        plugin: {
+          install: {
+            plugin: UnifiedWebpackPluginV5,
+            args: [
+              {
+                appType: 'taro',
+                // disabled: WeappTailwindcssDisabled,
+                rem2rpx: true,
+              },
+            ],
+          },
+        },
+      });
     },
   },
   h5: {
