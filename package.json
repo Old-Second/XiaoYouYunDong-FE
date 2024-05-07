@@ -1,5 +1,5 @@
 {
-  "name": "XiaoYouYunDong-FE",
+  "name": "xiaoyouyundong-fe",
   "version": "1.0.0",
   "private": true,
   "description": "校友运动(小程序前端仓库)",
@@ -71,6 +71,7 @@
     "@tarojs/webpack5-runner": "3.6.28",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.0",
+    "@types/sass": "1.43.1",
     "@types/webpack-env": "^1.13.6",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
@@ -95,6 +96,9 @@
     "typescript": "^4.1.0",
     "weapp-tailwindcss": "^3.2.0",
     "webpack": "^5.78.0"
+  },
+  "resolutions": {
+    "@types/sass": "1.43.1"
   },
   "packageManager": "yarn@4.2.1"
 }
