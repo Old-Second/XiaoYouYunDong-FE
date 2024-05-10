@@ -24,7 +24,7 @@ const Profile: React.FC = () => {
   };
 
   return (
-    <View className="relative flex h-screen w-full flex-col bg-slate-100">
+    <View className="relative flex h-screen w-full flex-col bg-gray-100">
       <View className="relative top-[8vh] flex flex-col gap-8">
         <View className="relative flex justify-center">
           <AtAvatar
