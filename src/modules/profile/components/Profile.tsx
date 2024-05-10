@@ -1,7 +1,20 @@
 import { Button, Text, View } from '@tarojs/components';
+import Taro from '@tarojs/taro';
 import { AtAvatar, AtIcon } from 'taro-ui';
 
 import 'taro-ui/dist/style/components/button.scss';
+
+const INFO_ITEMS = [
+  { herf: '/', icon: 'file-generic', content: '我的订单' },
+  { herf: '/', icon: 'credit-card', content: '我的钱包' },
+  { herf: '/', icon: 'share', content: '我要推广' },
+  { herf: '/', icon: 'file-generic', content: '活动报告' },
+];
+
+const SETTLE_ITEMS = [
+  { herf: '/', icon: 'mail', content: '邀请入驻' },
+  { herf: '/', icon: 'shopping-bag', content: '商家入驻' },
+];
 
 const Profile: React.FC = () => {
   return (
@@ -16,11 +29,11 @@ const Profile: React.FC = () => {
           ></AtAvatar>
           <View className="flex h-[18vh] w-[90%] flex-col gap-3 bg-white pb-28 shadow-2xl">
             <Text className="relative left-[12vh] top-3 text-sm">用户昵称</Text>
-            <Text className="relative left-[3vh] top-3 text-xs text-gray-300">
+            <Text className="relative left-[3vh] top-3 text-xs text-gray-400">
               关注 30 | 粉丝 100 | 加入 5
             </Text>
             <View className="relative top-3 flex w-full justify-center">
-              <Text className="w-[90%] bg-[#F7FFE5] p-2 text-xs text-gray-300">
+              <Text className="w-[90%] bg-[#F7FFE5] p-2 text-xs text-gray-400">
                 个性签名
               </Text>
             </View>
@@ -31,38 +44,42 @@ const Profile: React.FC = () => {
         </View>
         <View className="flex justify-center">
           <View className="flex h-[12vh] w-[90%] justify-between rounded-xl bg-white px-5">
-            <View className="flex flex-col items-center justify-center border-none bg-transparent">
-              <AtIcon value="file-generic" size="25"></AtIcon>
-              <Text className="text-xs">我的订单</Text>
-            </View>
-            <View className="flex flex-col items-center justify-center border-none bg-transparent">
-              <AtIcon value="credit-card" size="25"></AtIcon>
-              <Text className="text-xs">我的钱包</Text>
-            </View>
-            <View className="flex flex-col items-center justify-center border-none bg-transparent">
-              <AtIcon value="share" size="25"></AtIcon>
-              <Text className="text-xs">我要推广</Text>
-            </View>
-            <View className="flex flex-col items-center justify-center border-none bg-transparent">
-              <AtIcon value="file-generic" size="25"></AtIcon>
-              <Text className="text-xs">活动报告</Text>
-            </View>
+            {INFO_ITEMS.map((item, index) => (
+              <View
+                key={index}
+                className="flex flex-col items-center justify-center border-none bg-transparent"
+                onClick={() => {
+                  void Taro.navigateTo({
+                    url: '/',
+                  });
+                }}
+              >
+                <AtIcon value={item.icon} size="25"></AtIcon>
+                <Text className="text-xs">{item.content}</Text>
+              </View>
+            ))}
           </View>
         </View>
         <View className="flex w-full justify-center">
           <View className="flex w-[90%] justify-between gap-5">
-            <View className="flex h-[10vh] flex-1 flex-col items-center justify-center rounded-xl bg-white">
-              <View className="flex flex-col items-center justify-center border-none bg-transparent">
-                <AtIcon value="mail" size="25"></AtIcon>
-                <Text className="text-xs">邀请入驻</Text>
+            {SETTLE_ITEMS.map((item, index) => (
+              <View
+                key={index}
+                className="flex h-[10vh] flex-1 flex-col items-center justify-center rounded-xl bg-white"
+              >
+                <View
+                  className="flex flex-col items-center justify-center border-none bg-transparent"
+                  onClick={() => {
+                    void Taro.navigateTo({
+                      url: '/',
+                    });
+                  }}
+                >
+                  <AtIcon value={item.icon} size="25"></AtIcon>
+                  <Text className="text-xs">{item.content}</Text>
+                </View>
               </View>
-            </View>
-            <View className="flex h-[10vh] flex-1 flex-col items-center justify-center rounded-xl bg-white">
-              <View className="flex flex-col items-center justify-center border-none bg-transparent">
-                <AtIcon value="shopping-bag" size="25"></AtIcon>
-                <Text className="text-xs">商家入驻</Text>
-              </View>
-            </View>
+            ))}
           </View>
         </View>
       </View>
