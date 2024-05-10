@@ -6,7 +6,7 @@ import 'taro-ui/dist/style/components/button.scss';
 
 const INFO_ITEMS = [
   { herf: '/', icon: 'file-generic', content: '我的订单' },
-  { herf: '/', icon: 'credit-card', content: '我的钱包' },
+  { herf: '/pages/profile/wallet/index', icon: 'credit-card', content: '我的钱包' },
   { herf: '/', icon: 'share', content: '我要推广' },
   { herf: '/', icon: 'file-generic', content: '活动报告' },
 ];
@@ -17,6 +17,12 @@ const SETTLE_ITEMS = [
 ];
 
 const Profile: React.FC = () => {
+  const handleNavigate = (url: string) => {
+    void Taro.navigateTo({
+      url: url,
+    });
+  };
+
   return (
     <View className="relative flex h-screen w-full flex-col bg-slate-100">
       <View className="relative top-[8vh] flex flex-col gap-8">
@@ -49,9 +55,7 @@ const Profile: React.FC = () => {
                 key={index}
                 className="flex flex-col items-center justify-center border-none bg-transparent"
                 onClick={() => {
-                  void Taro.navigateTo({
-                    url: '/',
-                  });
+                  handleNavigate(item.herf);
                 }}
               >
                 <AtIcon value={item.icon} size="25"></AtIcon>
@@ -70,9 +74,7 @@ const Profile: React.FC = () => {
                 <View
                   className="flex flex-col items-center justify-center border-none bg-transparent"
                   onClick={() => {
-                    void Taro.navigateTo({
-                      url: '/',
-                    });
+                    handleNavigate(item.herf);
                   }}
                 >
                   <AtIcon value={item.icon} size="25"></AtIcon>
