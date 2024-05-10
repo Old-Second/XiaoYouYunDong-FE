@@ -2,7 +2,7 @@
   "miniprogramRoot": "dist/",
   "projectname": "XiaoYouYunDong-FE",
   "description": "校友运动(小程序前端仓库)",
-  "appid": "touristappid",
+  "appid": "wxa9c38252c39e2033",
   "setting": {
     "urlCheck": true,
     "es6": false,
