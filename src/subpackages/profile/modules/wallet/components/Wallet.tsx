@@ -1,8 +1,6 @@
 import { Button, Text, View } from '@tarojs/components';
 import { Eye } from 'lucide-react';
 
-import 'taro-ui/dist/style/components/button.scss';
-
 const Wallet: React.FC = () => {
   return (
     <View className="relative flex h-screen w-full flex-col bg-gray-100">

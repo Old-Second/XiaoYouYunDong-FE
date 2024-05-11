@@ -2,8 +2,6 @@ import { Button, Text, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import { AtAvatar, AtIcon } from 'taro-ui';
 
-import 'taro-ui/dist/style/components/button.scss';
-
 const INFO_ITEMS = [
   { herf: '/', icon: 'file-generic', content: '我的订单' },
   {
@@ -13,7 +11,7 @@ const INFO_ITEMS = [
   },
   { herf: '/', icon: 'share', content: '我要推广' },
   {
-    herf: 'subpackages/profile/pages/activity/index',
+    herf: '/subpackages/profile/pages/activity/index',
     icon: 'file-generic',
     content: '活动报告',
   },
@@ -51,7 +49,12 @@ const Profile: React.FC = () => {
                 个性签名
               </Text>
             </View>
-            <Button className="absolute right-10 top-6 rounded-none bg-[#05D6A1] px-4 py-[12px] text-sm text-white">
+            <Button
+              className="absolute right-10 top-6 rounded-none bg-[#05D6A1] px-4 py-[12px] text-sm text-white"
+              onClick={() => {
+                handleNavigate('/subpackages/profile/pages/information/index');
+              }}
+            >
               编辑资料
             </Button>
           </View>
