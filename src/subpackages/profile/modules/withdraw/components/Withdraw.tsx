@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { AtFloatLayout, AtIcon } from 'taro-ui';
 
 const Withdraw: React.FC = () => {
-  const [isAccordionOpen, setIsAccordionOpen] = useState(false);
+  const [isFloatLayoutOpen, setIsFloatLayoutOpen] = useState(false);
 
   const date = new Date();
   const startYear = 2023;
@@ -44,8 +44,8 @@ const Withdraw: React.FC = () => {
     month = 1;
   }
 
-  const handleAccordionClick = (value: boolean) => {
-    setIsAccordionOpen(value);
+  const handleSelectClick = (value: boolean) => {
+    setIsFloatLayoutOpen(value);
   };
 
   return (
@@ -54,18 +54,18 @@ const Withdraw: React.FC = () => {
         <View className="relative flex h-auto w-full px-5 pt-4">
           <Text
             className="text-[1.8vh]"
-            onClick={() => handleAccordionClick(!isAccordionOpen)}
+            onClick={() => handleSelectClick(!isFloatLayoutOpen)}
           >
             {currentTime}
             <AtIcon
-              value={isAccordionOpen ? 'chevron-up' : 'chevron-down'}
+              value={isFloatLayoutOpen ? 'chevron-up' : 'chevron-down'}
               size={20}
             ></AtIcon>
           </Text>
           <AtFloatLayout
-            isOpened={isAccordionOpen}
+            isOpened={isFloatLayoutOpen}
             title="请选择月份"
-            onClose={() => handleAccordionClick(false)}
+            onClose={() => handleSelectClick(false)}
           >
             <View className="flex h-auto w-full flex-col items-center gap-2 px-2 py-3">
               {YearMonthLists}
