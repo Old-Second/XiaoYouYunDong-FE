@@ -2,8 +2,6 @@ import { Button, Text, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import { AtAvatar, AtIcon } from 'taro-ui';
 
-import 'taro-ui/dist/style/components/button.scss';
-
 const INFO_ITEMS = [
   { herf: '/', icon: 'file-generic', content: '我的订单' },
   {
