@@ -1,19 +1,11 @@
-import { Button, Text, View } from '@tarojs/components';
-import Taro from '@tarojs/taro';
-import { Eye } from 'lucide-react';
+import { View } from '@tarojs/components';
 
 import 'taro-ui/dist/style/components/button.scss';
 
-const Wallet: React.FC = () => {
-  const handleNavigate = (url: string) => {
-    void Taro.navigateTo({
-      url: url,
-    });
-  };
-
+const Withdraw: React.FC = () => {
   return (
     <View className="relative flex h-screen w-full flex-col bg-gray-100">
-      <View className="relative top-[4vh] flex flex-col items-center gap-2">
+      {/* <View className="relative top-[4vh] flex flex-col items-center gap-2">
         <View className="flex h-auto w-[90%] flex-col gap-6 rounded-lg bg-white px-5 py-4">
           <Text className="text-[1.8vh]">总余额</Text>
           <Eye />
@@ -23,12 +15,7 @@ const Wallet: React.FC = () => {
               <Button className="relative left-0 m-0 flex h-10 items-center justify-center border-none bg-[#05D6A1] px-10 py-1 text-[2.5vh] text-white">
                 提现
               </Button>
-              <Text
-                className="absolute bottom-0 right-0 text-[1.5vh] text-blue-500 underline"
-                onClick={() => {
-                  handleNavigate('/subpackages/profile/pages/withdraw/index');
-                }}
-              >
+              <Text className="absolute bottom-0 right-0 text-[1.5vh] text-blue-500 underline">
                 提现记录
               </Text>
             </View>
@@ -59,9 +46,9 @@ const Wallet: React.FC = () => {
             </View>
           </View>
         </View>
-      </View>
+      </View> */}
     </View>
   );
 };
 
-export default Wallet;
+export default Withdraw;
