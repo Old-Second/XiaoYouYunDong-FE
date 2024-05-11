@@ -1,6 +1,6 @@
-import { Button, Text, View } from '@tarojs/components';
+import { Text, View } from '@tarojs/components';
 import { useState } from 'react';
-import { AtFloatLayout, AtIcon } from 'taro-ui';
+import { AtButton, AtFloatLayout, AtIcon } from 'taro-ui';
 
 const Withdraw: React.FC = () => {
   const [isFloatLayoutOpen, setIsFloatLayoutOpen] = useState(false);
@@ -30,12 +30,12 @@ const Withdraw: React.FC = () => {
     YearMonthLists.push(
       <View className="grid grid-cols-4 gap-4">
         {monthsInYear.map((monthName, index) => (
-          <Button
+          <AtButton
             key={index}
             className="flex w-20 items-center justify-center border-none bg-white px-4 py-1 text-[2.5vh]"
           >
             {monthName}
-          </Button>
+          </AtButton>
         ))}
       </View>
     );
