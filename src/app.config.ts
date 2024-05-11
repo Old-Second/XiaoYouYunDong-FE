@@ -9,7 +9,7 @@ export default defineAppConfig({
   subpackages: [
     //分包
     {
-      root: 'profile',
+      root: 'subpackages/profile',
       pages: ['pages/wallet/index', 'pages/activity/index'],
     },
   ],

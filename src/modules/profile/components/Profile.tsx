@@ -6,9 +6,17 @@ import 'taro-ui/dist/style/components/button.scss';
 
 const INFO_ITEMS = [
   { herf: '/', icon: 'file-generic', content: '我的订单' },
-  { herf: '/profile/pages/wallet/index', icon: 'credit-card', content: '我的钱包' },
+  {
+    herf: '/subpackages/profile/pages/wallet/index',
+    icon: 'credit-card',
+    content: '我的钱包',
+  },
   { herf: '/', icon: 'share', content: '我要推广' },
-  { herf: '/profile/pages/activity/index', icon: 'file-generic', content: '活动报告' },
+  {
+    herf: 'subpackages/profile/pages/activity/index',
+    icon: 'file-generic',
+    content: '活动报告',
+  },
 ];
 
 const SETTLE_ITEMS = [
