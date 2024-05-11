@@ -1,6 +1,8 @@
 import { Text, View } from '@tarojs/components';
 import { useState } from 'react';
-import { AtButton, AtFloatLayout, AtIcon } from 'taro-ui';
+import { AtFloatLayout, AtIcon } from 'taro-ui';
+
+import YearMonthList from './YearMonthList';
 
 const Withdraw: React.FC = () => {
   const [isFloatLayoutOpen, setIsFloatLayoutOpen] = useState(false);
@@ -11,38 +13,6 @@ const Withdraw: React.FC = () => {
   const currentYear = date.getFullYear();
   const currentMonth = date.getMonth() + 1;
   const currentTime = `${currentYear}年${currentMonth}月`;
-
-  const YearMonthLists: React.ReactNode[] = [];
-  let year = startYear;
-  let month = startMonth;
-
-  while (year <= currentYear) {
-    const monthsInYear: string[] = [];
-    YearMonthLists.push(<Text className="text-[1.8vh] text-gray-500">{year}年</Text>);
-
-    for (month; month >= 1 && month <= 12; month++) {
-      if (year === currentYear && month > currentMonth) {
-        break;
-      }
-      monthsInYear.push(`${month}月`);
-    }
-
-    YearMonthLists.push(
-      <View className="grid grid-cols-4 gap-4">
-        {monthsInYear.map((monthName, index) => (
-          <AtButton
-            key={index}
-            className="flex w-20 items-center justify-center border-none bg-white px-4 py-1 text-[2.5vh]"
-          >
-            {monthName}
-          </AtButton>
-        ))}
-      </View>
-    );
-
-    year++;
-    month = 1;
-  }
 
   const handleSelectClick = (value: boolean) => {
     setIsFloatLayoutOpen(value);
@@ -68,7 +38,12 @@ const Withdraw: React.FC = () => {
             onClose={() => handleSelectClick(false)}
           >
             <View className="flex h-auto w-full flex-col items-center gap-2 px-2 py-3">
-              {YearMonthLists}
+              <YearMonthList
+                startYear={startYear}
+                startMonth={startMonth}
+                currentYear={currentYear}
+                currentMonth={currentMonth}
+              />
             </View>
           </AtFloatLayout>
           <Text className="absolute right-5 text-[1.8vh]">收入 $600.00</Text>
