@@ -2,6 +2,19 @@ import { Button, Text, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import { Eye } from 'lucide-react';
 
+const RECORD_ITEMS = [
+  {
+    content: '活动收款（已扣除1%手续费）',
+    timestamp: '2023-01-01 12:00',
+    amount: '+300.00',
+  },
+  {
+    content: '活动收款（已扣除1%手续费）',
+    timestamp: '2023-01-01 12:00',
+    amount: '+300.00',
+  },
+];
+
 const Wallet: React.FC = () => {
   const handleNavigate = (url: string) => {
     void Taro.navigateTo({
@@ -37,24 +50,18 @@ const Wallet: React.FC = () => {
           <Text className="text-[1.8vh]">账单明细</Text>
           <Eye />
           <View className="flex flex-col items-center gap-2">
-            <View className="relative flex h-[10vh] w-full flex-col gap-2 rounded-md border border-gray-300 px-3 py-4">
-              <Text className="text-[1.8vh] font-semibold">
-                活动收款（已扣除1%手续费）
-              </Text>
-              <Text className="text-[1.5vh] text-gray-500">2023-01-01 12:00</Text>
-              <Text className="absolute bottom-4 right-3 text-[3vh] text-red-500">
-                +300.00
-              </Text>
-            </View>
-            <View className="relative flex h-[10vh] w-full flex-col gap-2 rounded-md border border-gray-300 px-3 py-4">
-              <Text className="text-[1.8vh] font-semibold">
-                活动收款（已扣除1%手续费）
-              </Text>
-              <Text className="text-[1.5vh] text-gray-500">2023-01-01 12:00</Text>
-              <Text className="absolute bottom-4 right-3 text-[3vh] text-red-500">
-                +300.00
-              </Text>
-            </View>
+            {RECORD_ITEMS.map((item, index) => (
+              <View
+                key={index}
+                className="relative flex h-[10vh] w-full flex-col gap-2 rounded-md border border-gray-300 px-3 py-4"
+              >
+                <Text className="text-[1.8vh] font-semibold">{item.content}</Text>
+                <Text className="text-[1.5vh] text-gray-500">{item.timestamp}</Text>
+                <Text className="absolute bottom-4 right-3 text-[3vh] text-red-500">
+                  {item.amount}
+                </Text>
+              </View>
+            ))}
           </View>
         </View>
       </View>

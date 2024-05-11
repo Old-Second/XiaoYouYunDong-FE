@@ -4,6 +4,19 @@ import { AtFloatLayout, AtIcon } from 'taro-ui';
 
 import YearMonthList from './YearMonthList';
 
+const RECORD_ITEMS = [
+  {
+    content: '钱包提现-支付宝15902718000',
+    timestamp: '2023-01-01 12:00',
+    amount: '300.00',
+  },
+  {
+    content: '钱包提现-支付宝15902718000',
+    timestamp: '2023-01-01 12:00',
+    amount: '300.00',
+  },
+];
+
 const Withdraw: React.FC = () => {
   const [isFloatLayoutOpen, setIsFloatLayoutOpen] = useState(false);
 
@@ -50,24 +63,18 @@ const Withdraw: React.FC = () => {
         </View>
         <View className="flex h-auto w-[90%] flex-col gap-6 rounded-lg bg-white px-3 py-4">
           <View className="flex flex-col items-center gap-2">
-            <View className="relative flex h-[10vh] w-full flex-col gap-2 rounded-md border border-gray-300 px-3 py-4">
-              <Text className="text-[1.8vh] font-semibold">
-                钱包提现-支付宝15902718000
-              </Text>
-              <Text className="text-[1.5vh] text-gray-500">2023-01-01 12:00</Text>
-              <Text className="absolute bottom-4 right-3 text-[3vh] text-red-500">
-                300.00
-              </Text>
-            </View>
-            <View className="relative flex h-[10vh] w-full flex-col gap-2 rounded-md border border-gray-300 px-3 py-4">
-              <Text className="text-[1.8vh] font-semibold">
-                钱包提现-支付宝15902718000
-              </Text>
-              <Text className="text-[1.5vh] text-gray-500">2023-01-01 12:00</Text>
-              <Text className="absolute bottom-4 right-3 text-[3vh] text-red-500">
-                300.00
-              </Text>
-            </View>
+            {RECORD_ITEMS.map((item, index) => (
+              <View
+                key={index}
+                className="relative flex h-[10vh] w-full flex-col gap-2 rounded-md border border-gray-300 px-3 py-4"
+              >
+                <Text className="text-[1.8vh] font-semibold">{item.content}</Text>
+                <Text className="text-[1.5vh] text-gray-500">{item.timestamp}</Text>
+                <Text className="absolute bottom-4 right-3 text-[3vh] text-red-500">
+                  {item.amount}
+                </Text>
+              </View>
+            ))}
           </View>
         </View>
         <Text className="text-[1.5vh] text-gray-500">当月无更多提现记录</Text>
