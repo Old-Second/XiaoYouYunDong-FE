@@ -2,6 +2,8 @@ import { Text, View } from '@tarojs/components';
 import { useState } from 'react';
 import { AtFloatLayout, AtIcon } from 'taro-ui';
 
+import Record from '@/common/elements/Record';
+
 import YearMonthList from './YearMonthList';
 
 const RECORD_ITEMS = [
@@ -64,16 +66,12 @@ const Withdraw: React.FC = () => {
         <View className="flex h-auto w-[90%] flex-col gap-6 rounded-lg bg-white px-3 py-4">
           <View className="flex flex-col items-center gap-2">
             {RECORD_ITEMS.map((item, index) => (
-              <View
+              <Record
                 key={index}
-                className="relative flex h-[10vh] w-full flex-col gap-2 rounded-md border border-gray-300 px-3 py-4"
-              >
-                <Text className="text-[1.8vh] font-semibold">{item.content}</Text>
-                <Text className="text-[1.5vh] text-gray-500">{item.timestamp}</Text>
-                <Text className="absolute bottom-4 right-3 text-[3vh] text-red-500">
-                  {item.amount}
-                </Text>
-              </View>
+                content={item.content}
+                timestamp={item.timestamp}
+                amount={item.amount}
+              />
             ))}
           </View>
         </View>
