@@ -2,8 +2,6 @@ import { Button, Text, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import { Eye } from 'lucide-react';
 
-import 'taro-ui/dist/style/components/button.scss';
-
 const Wallet: React.FC = () => {
   const handleNavigate = (url: string) => {
     void Taro.navigateTo({

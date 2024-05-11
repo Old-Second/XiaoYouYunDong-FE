@@ -1,7 +1,5 @@
 import { View } from '@tarojs/components';
 
-import 'taro-ui/dist/style/components/button.scss';
-
 const Withdraw: React.FC = () => {
   return (
     <View className="relative flex h-screen w-full flex-col bg-gray-100">
