@@ -1,3 +1,4 @@
+import path from 'path';
 import { UnifiedWebpackPluginV5 } from 'weapp-tailwindcss/webpack';
 
 const config = {
@@ -18,6 +19,9 @@ const config = {
     options: {},
   },
   framework: 'react',
+  alias: {
+    '@': path.resolve(__dirname, '..', 'src'),
+  },
   compiler: {
     type: 'webpack5',
     prebundle: {

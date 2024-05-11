@@ -10,7 +10,12 @@ export default defineAppConfig({
     //分包
     {
       root: 'subpackages/profile',
-      pages: ['pages/wallet/index', 'pages/information/index', 'pages/activity/index'],
+      pages: [
+        'pages/wallet/index',
+        'pages/information/index',
+        'pages/activity/index',
+        'pages/withdraw/index',
+      ],
     },
   ],
   // tabBar: {
