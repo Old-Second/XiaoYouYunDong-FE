@@ -1,5 +1,5 @@
 export default defineAppConfig({
-  pages: ['pages/profile/index'],
+  pages: ['pages/home/index', 'pages/profile/index'],
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
@@ -8,6 +8,10 @@ export default defineAppConfig({
   },
   subpackages: [
     //分包
+    {
+      root: 'subpackages/home',
+      pages: ['pages/postActivity/index'],
+    },
     {
       root: 'subpackages/profile',
       pages: [
