@@ -23,10 +23,10 @@ const Activity: React.FC = () => {
           <ActivityCard />
         </AtTabsPane>
         <AtTabsPane current={tabsCurrent} index={1}>
-          <ActivityCard />
-          <ActivityCard />
-          <ActivityCard />
-          <ActivityCard />
+          <ActivityCard showCancel />
+          <ActivityCard showCancel />
+          <ActivityCard showCancel />
+          <ActivityCard showCancel />
         </AtTabsPane>
       </AtTabs>
     </View>
