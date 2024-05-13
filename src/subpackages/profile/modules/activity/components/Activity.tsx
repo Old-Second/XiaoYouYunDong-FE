@@ -2,6 +2,8 @@ import { View } from '@tarojs/components';
 import { SetStateAction, useState } from 'react';
 import { AtTabs, AtTabsPane } from 'taro-ui';
 
+import '@/subpackages/profile/modules/activity/components/custom-theme.scss';
+
 import ActivityCard from '@/subpackages/profile/modules/activity/components/ActivityCard';
 import ActivitySearchBox from '@/subpackages/profile/modules/activity/components/ActivitySearchBox';
 

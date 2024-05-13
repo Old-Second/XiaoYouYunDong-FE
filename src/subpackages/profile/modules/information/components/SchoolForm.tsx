@@ -2,6 +2,11 @@ import { Picker, Text, View } from '@tarojs/components';
 import { useEffect, useState } from 'react';
 import { AtForm, AtInput, AtList, AtListItem } from 'taro-ui';
 
+import 'taro-ui/dist/style/components/form.scss';
+import 'taro-ui/dist/style/components/icon.scss';
+import 'taro-ui/dist/style/components/input.scss';
+import 'taro-ui/dist/style/components/list.scss';
+
 import { IdentityFormData } from './IdentityForm';
 import { PersonalFormData } from './PersonalForm';
 

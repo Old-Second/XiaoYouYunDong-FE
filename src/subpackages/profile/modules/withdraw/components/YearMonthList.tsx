@@ -1,6 +1,9 @@
 import { Text, View } from '@tarojs/components';
 import { AtButton } from 'taro-ui';
 
+import 'taro-ui/dist/style/components/button.scss';
+import 'taro-ui/dist/style/components/loading.scss';
+
 interface MouthButtonListProps {
   monthsInYear: string[];
 }

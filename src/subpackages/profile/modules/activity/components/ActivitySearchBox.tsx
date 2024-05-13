@@ -2,6 +2,9 @@ import { Icon, View } from '@tarojs/components';
 import { useState } from 'react';
 import { AtInput } from 'taro-ui';
 
+import 'taro-ui/dist/style/components/icon.scss';
+import 'taro-ui/dist/style/components/input.scss';
+
 const ActivitySearchBox: React.FC = () => {
   const [searchValue, setSearchValue] = useState<string>('');
   const handleSearchChange = (value: string) => {

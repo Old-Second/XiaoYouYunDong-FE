@@ -2,6 +2,9 @@ import { View } from '@tarojs/components';
 import { useState } from 'react';
 import { AtButton } from 'taro-ui';
 
+import 'taro-ui/dist/style/components/button.scss';
+import 'taro-ui/dist/style/components/loading.scss';
+
 import IdentityForm, { IdentityFormData } from './IdentityForm';
 import PersonalForm, { PersonalFormData } from './PersonalForm';
 import SchoolForm, { SchoolFormData } from './SchoolForm';
