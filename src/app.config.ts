@@ -22,36 +22,36 @@ export default defineAppConfig({
       ],
     },
   ],
-  // tabBar: {
-  //   /* tab页面必须放在主包里 */
-  //   list: [
-  //     {
-  //       pagePath: '',
-  //       text: '首页',
-  //       iconPath: '',
-  //       selectedIconPath: '',
-  //     },
-  //     {
-  //       pagePath: '',
-  //       text: '发布',
-  //       iconPath: '',
-  //       selectedIconPath: '',
-  //     },
-  //     {
-  //       pagePath: '',
-  //       text: '消息',
-  //       iconPath: '',
-  //       selectedIconPath: '',
-  //     },
-  //     {
-  //       pagePath: 'pages/profile/profile/index',
-  //       text: '我的',
-  //       iconPath: '',
-  //       selectedIconPath: '',
-  //     },
-  //   ],
-  //   color: '#000000',
-  //   backgroundColor: '#F5E3E3',
-  //   selectedColor: '#D39999',
-  // },
+  tabBar: {
+    /* tab页面必须放在主包里 */
+    list: [
+      {
+        pagePath: 'pages/home/index',
+        text: '首页',
+        iconPath: '',
+        selectedIconPath: '',
+      },
+      // {
+      //   pagePath: '',
+      //   text: '发布',
+      //   iconPath: '',
+      //   selectedIconPath: '',
+      // },
+      // {
+      //   pagePath: '',
+      //   text: '消息',
+      //   iconPath: '',
+      //   selectedIconPath: '',
+      // },
+      {
+        pagePath: 'pages/profile/index',
+        text: '我的',
+        iconPath: '',
+        selectedIconPath: '',
+      },
+    ],
+    color: '#000000',
+    backgroundColor: '#FFFFFF',
+    selectedColor: '#12FFBD',
+  },
 });
