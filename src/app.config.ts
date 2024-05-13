@@ -9,6 +9,10 @@ export default defineAppConfig({
   subpackages: [
     //分包
     {
+      root: 'subpackages/home',
+      pages: ['pages/postActivity/index'],
+    },
+    {
       root: 'subpackages/profile',
       pages: [
         'pages/wallet/index',
