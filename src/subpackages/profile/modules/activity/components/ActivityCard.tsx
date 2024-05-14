@@ -1,4 +1,4 @@
-import { CoverImage, Icon, Text, View } from '@tarojs/components';
+import { Icon, Image, Text, View } from '@tarojs/components';
 
 interface ActivityCardProps {
   showCancel?: boolean;
@@ -8,7 +8,10 @@ const ActivityCard: React.FC<ActivityCardProps> = ({ showCancel = false }) => {
   return (
     <View className="my-3 flex min-h-48 flex-col rounded-xl bg-white px-3.5 py-2">
       <View className="relative h-32">
-        <CoverImage src="https://i0.hdslb.com/bfs/archive/711a2b7ea82cf65d4ca342e9cce07fff846d1292.jpg" />
+        <Image
+          className="h-32 w-full"
+          src="https://i0.hdslb.com/bfs/archive/711a2b7ea82cf65d4ca342e9cce07fff846d1292.jpg"
+        />
         <View className="absolute left-0.5 top-0.5 rounded-3xl bg-[#05D6A1] px-3 py-1 text-xs text-white">
           华中科技大学
         </View>

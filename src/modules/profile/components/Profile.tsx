@@ -6,7 +6,11 @@ import 'taro-ui/dist/style/components/avatar.scss';
 import 'taro-ui/dist/style/components/icon.scss';
 
 const INFO_ITEMS = [
-  { herf: '/', icon: 'file-generic', content: '我的订单' },
+  {
+    herf: '/subpackages/profile/pages/activity/index',
+    icon: 'file-generic',
+    content: '我的订单',
+  },
   {
     herf: '/subpackages/profile/pages/wallet/index',
     icon: 'credit-card',
@@ -14,7 +18,7 @@ const INFO_ITEMS = [
   },
   { herf: '/', icon: 'share', content: '我要推广' },
   {
-    herf: '/subpackages/profile/pages/activity/index',
+    herf: '/',
     icon: 'file-generic',
     content: '活动报告',
   },

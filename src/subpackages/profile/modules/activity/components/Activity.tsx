@@ -1,4 +1,4 @@
-import { View } from '@tarojs/components';
+import { ScrollView, View } from '@tarojs/components';
 import { SetStateAction, useState } from 'react';
 import { AtTabs, AtTabsPane } from 'taro-ui';
 
@@ -19,16 +19,20 @@ const Activity: React.FC = () => {
       <ActivitySearchBox />
       <AtTabs current={tabsCurrent} tabList={tabList} onClick={handleClick}>
         <AtTabsPane current={tabsCurrent} index={0}>
-          <ActivityCard />
-          <ActivityCard />
-          <ActivityCard />
-          <ActivityCard />
+          <ScrollView scrollY className="h-[80vh]">
+            <ActivityCard />
+            <ActivityCard />
+            <ActivityCard />
+            <ActivityCard />
+          </ScrollView>
         </AtTabsPane>
         <AtTabsPane current={tabsCurrent} index={1}>
-          <ActivityCard showCancel />
-          <ActivityCard showCancel />
-          <ActivityCard showCancel />
-          <ActivityCard showCancel />
+          <ScrollView scrollY className="h-[80vh]">
+            <ActivityCard />
+            <ActivityCard />
+            <ActivityCard />
+            <ActivityCard />
+          </ScrollView>
         </AtTabsPane>
       </AtTabs>
     </View>
