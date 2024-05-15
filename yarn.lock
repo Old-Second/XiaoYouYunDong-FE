@@ -5194,6 +5194,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"buffer-json@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "buffer-json@npm:2.0.0"
+  checksum: 10c0/89c9fe7465426309aa54fbad1f8d76b78bfe94a404744877d77422cc910c88d8203184d7fda0b69b64fd157af88db82ff8128dbd9634bf88f3a0f2d17d1e95ec
+  languageName: node
+  linkType: hard
+
 "buffer@npm:^5.2.1, buffer@npm:^5.5.0":
   version: 5.7.1
   resolution: "buffer@npm:5.7.1"
@@ -5279,6 +5286,22 @@ __metadata:
     union-value: "npm:^1.0.0"
     unset-value: "npm:^1.0.0"
   checksum: 10c0/a7142e25c73f767fa520957dcd179b900b86eac63b8cfeaa3b2a35e18c9ca5968aa4e2d2bed7a3e7efd10f13be404344cfab3a4156217e71f9bdb95940bb9c8c
+  languageName: node
+  linkType: hard
+
+"cache-loader@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "cache-loader@npm:4.1.0"
+  dependencies:
+    buffer-json: "npm:^2.0.0"
+    find-cache-dir: "npm:^3.0.0"
+    loader-utils: "npm:^1.2.3"
+    mkdirp: "npm:^0.5.1"
+    neo-async: "npm:^2.6.1"
+    schema-utils: "npm:^2.0.0"
+  peerDependencies:
+    webpack: ^4.0.0
+  checksum: 10c0/7971982e5f5d3545db4e1da5614c26f2a3930f52d371159cd983254e72517be906e2d57d70abdf7299ebad73c8d5e248efc6211789475d907b2fe23c84188d50
   languageName: node
   linkType: hard
 
@@ -8834,6 +8857,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"find-cache-dir@npm:^3.0.0":
+  version: 3.3.2
+  resolution: "find-cache-dir@npm:3.3.2"
+  dependencies:
+    commondir: "npm:^1.0.1"
+    make-dir: "npm:^3.0.2"
+    pkg-dir: "npm:^4.1.0"
+  checksum: 10c0/92747cda42bff47a0266b06014610981cfbb71f55d60f2c8216bc3108c83d9745507fb0b14ecf6ab71112bed29cd6fb1a137ee7436179ea36e11287e3159e587
+  languageName: node
+  linkType: hard
+
 "find-up@npm:^2.0.0":
   version: 2.1.0
   resolution: "find-up@npm:2.1.0"
@@ -11355,7 +11389,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json-parse-better-errors@npm:^1.0.1":
+"json-parse-better-errors@npm:^1.0.1, json-parse-better-errors@npm:^1.0.2":
   version: 1.0.2
   resolution: "json-parse-better-errors@npm:1.0.2"
   checksum: 10c0/2f1287a7c833e397c9ddd361a78638e828fc523038bb3441fd4fc144cfd2c6cd4963ffb9e207e648cf7b692600f1e1e524e965c32df5152120910e4903a47dcb
@@ -11787,7 +11821,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loader-runner@npm:^4.2.0":
+"loader-runner@npm:^4.1.0, loader-runner@npm:^4.2.0":
   version: 4.3.0
   resolution: "loader-runner@npm:4.3.0"
   checksum: 10c0/a44d78aae0907a72f73966fe8b82d1439c8c485238bd5a864b1b9a2a3257832effa858790241e6b37876b5446a78889adf2fcc8dd897ce54c089ecc0a0ce0bf0
@@ -12097,7 +12131,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"make-dir@npm:^3.0.0, make-dir@npm:~3.1.0":
+"make-dir@npm:^3.0.0, make-dir@npm:^3.0.2, make-dir@npm:~3.1.0":
   version: 3.1.0
   resolution: "make-dir@npm:3.1.0"
   dependencies:
@@ -12907,7 +12941,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"neo-async@npm:^2.6.2":
+"neo-async@npm:^2.6.1, neo-async@npm:^2.6.2":
   version: 2.6.2
   resolution: "neo-async@npm:2.6.2"
   checksum: 10c0/c2f5a604a54a8ec5438a342e1f356dff4bc33ccccdb6dc668d94fe8e5eccfc9d2c2eea6064b0967a767ba63b33763f51ccf2cd2441b461a7322656c1f06b3f5d
@@ -13925,7 +13959,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pkg-dir@npm:^4.2.0":
+"pkg-dir@npm:^4.1.0, pkg-dir@npm:^4.2.0":
   version: 4.2.0
   resolution: "pkg-dir@npm:4.2.0"
   dependencies:
@@ -16244,7 +16278,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"schema-utils@npm:^2.6.5":
+"schema-utils@npm:^2.0.0, schema-utils@npm:^2.6.5":
   version: 2.7.1
   resolution: "schema-utils@npm:2.7.1"
   dependencies:
@@ -16266,7 +16300,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"schema-utils@npm:^4.0.0":
+"schema-utils@npm:^4.0.0, schema-utils@npm:^4.0.1":
   version: 4.2.0
   resolution: "schema-utils@npm:4.2.0"
   dependencies:
@@ -17638,6 +17672,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"taro-plugin-compiler-optimization@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "taro-plugin-compiler-optimization@npm:1.0.4"
+  checksum: 10c0/6d301944f18ef3df204861fb727c4551984e3237cd0215a3891ae11e13949da829b73dba0f0b804f66b559d480bd495df8933ad740e97fe849f8a279c87872f1
+  languageName: node
+  linkType: hard
+
 "taro-ui@npm:^3.2.1":
   version: 3.3.0
   resolution: "taro-ui@npm:3.3.0"
@@ -17724,6 +17765,20 @@ __metadata:
   dependencies:
     any-promise: "npm:^1.0.0"
   checksum: 10c0/f375aeb2b05c100a456a30bc3ed07ef03a39cbdefe02e0403fb714b8c7e57eeaad1a2f5c4ecfb9ce554ce3db9c2b024eba144843cd9e344566d9fcee73b04767
+  languageName: node
+  linkType: hard
+
+"thread-loader@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "thread-loader@npm:4.0.2"
+  dependencies:
+    json-parse-better-errors: "npm:^1.0.2"
+    loader-runner: "npm:^4.1.0"
+    neo-async: "npm:^2.6.2"
+    schema-utils: "npm:^4.0.1"
+  peerDependencies:
+    webpack: ^5.0.0
+  checksum: 10c0/907eeb4606650ddada05bcf9f0181e51fe4a03357429315a2d501e8b39581d14391ebc4b6b62c68190fbfaf65b624556847a2d3c745293087713006da5922ae4
   languageName: node
   linkType: hard
 
@@ -19305,6 +19360,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^5.20.0"
     autoprefixer: "npm:^10.4.19"
     babel-preset-taro: "npm:3.6.28"
+    cache-loader: "npm:^4.1.0"
     cssnano: "npm:^7.0.1"
     eslint: "npm:^8.12.0"
     eslint-config-prettier: "npm:^9.1.0"
@@ -19329,7 +19385,9 @@ __metadata:
     stylelint: "npm:9.3.0"
     tailwindcss: "npm:^3.4.3"
     taro-hooks: "npm:^2.0.11"
+    taro-plugin-compiler-optimization: "npm:^1.0.4"
     taro-ui: "npm:^3.2.1"
+    thread-loader: "npm:^4.0.2"
     ts-node: "npm:^10.9.1"
     typescript: "npm:^4.1.0"
     weapp-tailwindcss: "npm:^3.2.1"

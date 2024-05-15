@@ -12,7 +12,11 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: ['@taro-hooks/plugin-react', '@taro-hooks/plugin-auto-import'],
+  plugins: [
+    '@taro-hooks/plugin-react',
+    '@taro-hooks/plugin-auto-import',
+    'taro-plugin-compiler-optimization',
+  ],
   defineConstants: {},
   copy: {
     patterns: [],
