@@ -1,7 +1,7 @@
 <div align="center">
   <img width="130" src="https://github.com/XiaoYouYunDong.png" alt="ZhiHuiYuYan logo">
-  <h1 align="center">ZhiHuiYuYan-FE</h1>
-  <h3>智汇语研网站前端</h3>
+  <h1 align="center">XiaoYouYunDong-FE</h1>
+  <h3>校友运动小程序前端</h3>
   <a href="https://github.com/XiaoYouYunDong/XiaoYouYunDong-FE"><strong>探索项目文档 »</strong></a>
   <br />
   <br />
