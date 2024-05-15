@@ -4787,6 +4787,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"axios@npm:^0.19.0":
+  version: 0.19.2
+  resolution: "axios@npm:0.19.2"
+  dependencies:
+    follow-redirects: "npm:1.5.10"
+  checksum: 10c0/b775abf2db44ea4f182f4c2bfa4bf84a723b86f5aa001f222f12193fa45ba243b7e3f27b66289c6afa51d696402b05c82715fd621a34add5b538e850adcdbce1
+  languageName: node
+  linkType: hard
+
 "babel-helper-evaluate-path@npm:^0.5.0":
   version: 0.5.0
   resolution: "babel-helper-evaluate-path@npm:0.5.0"
@@ -5914,6 +5923,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"colors@npm:^1.3.3, colors@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "colors@npm:1.4.0"
+  checksum: 10c0/9af357c019da3c5a098a301cf64e3799d27549d8f185d86f79af23069e4f4303110d115da98483519331f6fb71c8568d5688fa1c6523600044fd4a54e97c4efb
+  languageName: node
+  linkType: hard
+
 "combined-stream@npm:^1.0.6, combined-stream@npm:^1.0.8, combined-stream@npm:~1.0.6":
   version: 1.0.8
   resolution: "combined-stream@npm:1.0.8"
@@ -6677,21 +6693,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"debug@npm:=3.1.0, debug@npm:~3.1.0":
+  version: 3.1.0
+  resolution: "debug@npm:3.1.0"
+  dependencies:
+    ms: "npm:2.0.0"
+  checksum: 10c0/5bff34a352d7b2eaa31886eeaf2ee534b5461ec0548315b2f9f80bd1d2533cab7df1fa52e130ce27bc31c3945fbffb0fc72baacdceb274b95ce853db89254ea4
+  languageName: node
+  linkType: hard
+
 "debug@npm:^3.0.0, debug@npm:^3.2.7":
   version: 3.2.7
   resolution: "debug@npm:3.2.7"
   dependencies:
     ms: "npm:^2.1.1"
   checksum: 10c0/37d96ae42cbc71c14844d2ae3ba55adf462ec89fd3a999459dec3833944cd999af6007ff29c780f1c61153bcaaf2c842d1e4ce1ec621e4fc4923244942e4a02a
-  languageName: node
-  linkType: hard
-
-"debug@npm:~3.1.0":
-  version: 3.1.0
-  resolution: "debug@npm:3.1.0"
-  dependencies:
-    ms: "npm:2.0.0"
-  checksum: 10c0/5bff34a352d7b2eaa31886eeaf2ee534b5461ec0548315b2f9f80bd1d2533cab7df1fa52e130ce27bc31c3945fbffb0fc72baacdceb274b95ce853db89254ea4
   languageName: node
   linkType: hard
 
@@ -8967,6 +8983,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"follow-redirects@npm:1.5.10":
+  version: 1.5.10
+  resolution: "follow-redirects@npm:1.5.10"
+  dependencies:
+    debug: "npm:=3.1.0"
+  checksum: 10c0/f56ca26dcf3c9996a6cf8868b61e369a35d4000ade0292bdd27b5e0934902681b037060b9fabe58e7042bb8b85166d5db8bbcf027f1825c1577e4cffd904fd3f
+  languageName: node
+  linkType: hard
+
 "follow-redirects@npm:^1.0.0":
   version: 1.15.6
   resolution: "follow-redirects@npm:1.15.6"
@@ -9418,7 +9443,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.6":
+"glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
   version: 7.2.3
   resolution: "glob@npm:7.2.3"
   dependencies:
@@ -10180,6 +10205,18 @@ __metadata:
   bin:
     husky: lib/bin.js
   checksum: 10c0/6722591771c657b91a1abb082e07f6547eca79144d678e586828ae806499d90dce2a6aee08b66183fd8b085f19d20e0990a2ad396961746b4c8bd5bdb619d668
+  languageName: node
+  linkType: hard
+
+"iconfont-parser@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "iconfont-parser@npm:1.0.0"
+  dependencies:
+    axios: "npm:^0.19.0"
+    colors: "npm:^1.4.0"
+    tslib: "npm:^1.10.0"
+    xml2js: "npm:^0.4.22"
+  checksum: 10c0/375bc2a82bc25635a78e31a70aa8094e63b6360e9661cfa64c7308169b6d9981bb8d4451a9b34d4118703e3f49abd944d6e61eb82f3214911c60c8038351b01d
   languageName: node
   linkType: hard
 
@@ -12548,6 +12585,31 @@ __metadata:
   peerDependencies:
     webpack: ^5.0.0
   checksum: 10c0/1bf667ad7f1fd9da6adff3f909969a67df65ef4411ab09590c349975f8faeebd7ec8594940631f6b8060349b5496472dc1cb364bb446c1e28492db795ca941bb
+  languageName: node
+  linkType: hard
+
+"mini-program-iconfont-cli@npm:0.6.1":
+  version: 0.6.1
+  resolution: "mini-program-iconfont-cli@npm:0.6.1"
+  dependencies:
+    axios: "npm:^0.19.0"
+    colors: "npm:^1.3.3"
+    fs-extra: "npm:^8.1.0"
+    glob: "npm:^7.1.4"
+    minimist: "npm:^1.2.5"
+    mkdirp: "npm:^0.5.1"
+    tslib: "npm:^1.10.0"
+    xml2js: "npm:^0.4.19"
+  bin:
+    iconfont: commands/help.js
+    iconfont-alipay: commands/createAlipayIcon.js
+    iconfont-baidu: commands/createBaiduIcon.js
+    iconfont-init: commands/createJson.js
+    iconfont-kuaishou: commands/createKuaishouIcon.js
+    iconfont-qq: commands/createQqIcon.js
+    iconfont-toutiao: commands/createToutiaoIcon.js
+    iconfont-wechat: commands/createWechatIcon.js
+  checksum: 10c0/9799a7dfca0a6efa6531f4e370ad9327cf5f7942bab0eb3dae970c7777b13283cadccc37a12016ed32ca5d304dd15afa5a808e2230daefa14fc5bd67e8260066
   languageName: node
   linkType: hard
 
@@ -15424,6 +15486,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-iconfont-cli@npm:2.0.2":
+  version: 2.0.2
+  resolution: "react-iconfont-cli@npm:2.0.2"
+  dependencies:
+    colors: "npm:^1.3.3"
+    glob: "npm:^7.1.4"
+    iconfont-parser: "npm:^1.0.0"
+    lodash: "npm:^4.17.15"
+    minimist: "npm:^1.2.5"
+    mkdirp: "npm:^0.5.1"
+    tslib: "npm:^1.10.0"
+  peerDependencies:
+    react: "*"
+  bin:
+    iconfont: commands/help.js
+    iconfont-h5: commands/createIcon.js
+    iconfont-init: commands/createJson.js
+  checksum: 10c0/ae8242b5c1077496cac0ccc74b4db3725ae3b21d4d4797841e503b666493962963a0938807d8c391f7e1a264f3f783308b34fb0ea0cf03535fb12ccd548473e4
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -15444,6 +15527,29 @@ __metadata:
   dependencies:
     prop-types: "npm:^15.7.2"
   checksum: 10c0/ce18b871c29d17377c08aa143be64d06e20df8e669720d2fe4eed5465c37ac4e6ebbfb4464aecb23e3e22d82114768dfacb65b0c49c33dd736f54a0507265641
+  languageName: node
+  linkType: hard
+
+"react-native-iconfont-cli@npm:2.2.4":
+  version: 2.2.4
+  resolution: "react-native-iconfont-cli@npm:2.2.4"
+  dependencies:
+    colors: "npm:^1.3.3"
+    glob: "npm:^7.1.4"
+    iconfont-parser: "npm:^1.0.0"
+    lodash: "npm:^4.17.15"
+    minimist: "npm:^1.2.5"
+    mkdirp: "npm:^0.5.1"
+    tslib: "npm:^1.10.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+    react-native-svg: ">=9.7.0"
+  bin:
+    iconfont: commands/help.js
+    iconfont-init: commands/createJson.js
+    iconfont-rn: commands/createIcon.js
+  checksum: 10c0/116420eca9d6f6b42c688533e245a1fbbce6c878506ffe2e1f5fdb03b4f2b6975793e57371facba17cb31ad63499a0b303f5f272dfd61a097afb2bf5ae6e80d4
   languageName: node
   linkType: hard
 
@@ -17672,6 +17778,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"taro-iconfont-cli@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "taro-iconfont-cli@npm:3.3.0"
+  dependencies:
+    colors: "npm:^1.4.0"
+    fs-extra: "npm:^8.1.0"
+    iconfont-parser: "npm:^1.0.0"
+    mini-program-iconfont-cli: "npm:0.6.1"
+    minimist: "npm:^1.2.5"
+    mkdirp: "npm:^0.5.1"
+    react-iconfont-cli: "npm:2.0.2"
+    react-native-iconfont-cli: "npm:2.2.4"
+    tslib: "npm:^2.3.1"
+  peerDependencies:
+    "@tarojs/taro": ^3.0.8
+  bin:
+    iconfont: commands/help.js
+    iconfont-init: commands/createJson.js
+    iconfont-taro: commands/index.js
+  checksum: 10c0/706787f4009e35726a76b0699f1724318402d8e3004077dad5947ff065ddf0511a4ee63e94988dc38fa9c9a84107ddffd78561892f47ae53ac5b2d608731794a
+  languageName: node
+  linkType: hard
+
 "taro-plugin-compiler-optimization@npm:^1.0.4":
   version: 1.0.4
   resolution: "taro-plugin-compiler-optimization@npm:1.0.4"
@@ -18049,7 +18178,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.6.2":
+"tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.3.1, tslib@npm:^2.6.2":
   version: 2.6.2
   resolution: "tslib@npm:2.6.2"
   checksum: 10c0/e03a8a4271152c8b26604ed45535954c0a45296e32445b4b87f8a5abdb2421f40b59b4ca437c4346af0f28179780d604094eb64546bee2019d903d01c6c19bdb
@@ -19385,6 +19514,7 @@ __metadata:
     stylelint: "npm:9.3.0"
     tailwindcss: "npm:^3.4.3"
     taro-hooks: "npm:^2.0.11"
+    taro-iconfont-cli: "npm:^3.3.0"
     taro-plugin-compiler-optimization: "npm:^1.0.4"
     taro-ui: "npm:^3.2.1"
     thread-loader: "npm:^4.0.2"
@@ -19399,6 +19529,16 @@ __metadata:
   version: 4.0.0
   resolution: "xml-name-validator@npm:4.0.0"
   checksum: 10c0/c1bfa219d64e56fee265b2bd31b2fcecefc063ee802da1e73bad1f21d7afd89b943c9e2c97af2942f60b1ad46f915a4c81e00039c7d398b53cf410e29d3c30bd
+  languageName: node
+  linkType: hard
+
+"xml2js@npm:^0.4.19, xml2js@npm:^0.4.22":
+  version: 0.4.23
+  resolution: "xml2js@npm:0.4.23"
+  dependencies:
+    sax: "npm:>=0.6.0"
+    xmlbuilder: "npm:~11.0.0"
+  checksum: 10c0/a3f41c9afc46d5bd0bea4070e5108777b605fd5ce2ebb978a68fd4c75513978ad5939f8135664ffea6f1adb342f391b1ba1584ed7955123b036e9ab8a1d26566
   languageName: node
   linkType: hard
 

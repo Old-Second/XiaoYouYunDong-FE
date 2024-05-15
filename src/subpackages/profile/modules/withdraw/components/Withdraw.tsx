@@ -5,7 +5,7 @@ import { AtFloatLayout, AtIcon } from 'taro-ui';
 import 'taro-ui/dist/style/components/float-layout.scss';
 import 'taro-ui/dist/style/components/icon.scss';
 
-import Record from '@/common/elements/Record';
+import Record from '@/common/components/elements/Record';
 
 import YearMonthList from './YearMonthList';
 
