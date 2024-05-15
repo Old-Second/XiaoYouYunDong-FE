@@ -12,7 +12,16 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: ['@taro-hooks/plugin-react', '@taro-hooks/plugin-auto-import'],
+  plugins: [
+    '@taro-hooks/plugin-react',
+    '@taro-hooks/plugin-auto-import',
+    // [
+    //   'taro-plugin-compiler-optimization',
+    //   {
+    //     closeScssCache: false, // 默认开启cache-loader缓存scss策略,若想关闭该策略改为true
+    //   },
+    // ],
+  ],
   defineConstants: {},
   copy: {
     patterns: [],
