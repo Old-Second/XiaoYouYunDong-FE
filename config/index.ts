@@ -12,11 +12,7 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: [
-    '@taro-hooks/plugin-react',
-    '@taro-hooks/plugin-auto-import',
-    'taro-plugin-compiler-optimization',
-  ],
+  plugins: ['@taro-hooks/plugin-react', '@taro-hooks/plugin-auto-import'],
   defineConstants: {},
   copy: {
     patterns: [],
@@ -54,6 +50,14 @@ const config = {
           generateScopedName: '[name]__[local]___[hash:base64:5]',
         },
       },
+    },
+    optimizeMainPackage: {
+      enable: true,
+      exclude: [
+        path.resolve(__dirname, '../src/*.tsx'),
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
+        (module) => module.resource?.indexOf('moduleName') >= 0,
+      ],
     },
     webpackChain(chain) {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
