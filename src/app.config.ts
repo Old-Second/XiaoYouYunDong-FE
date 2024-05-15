@@ -1,3 +1,5 @@
+// import { useGlobalIconFont } from './common/components/iconfont/helper';
+
 export default defineAppConfig({
   pages: ['pages/home/index', 'pages/profile/index'],
   window: {
@@ -54,4 +56,8 @@ export default defineAppConfig({
     backgroundColor: '#FFFFFF',
     selectedColor: '#12FFBD',
   },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  usingComponents: Object.assign({
+    iconfont: `common/components/iconfont/weapp/weapp`,
+  }),
 });
