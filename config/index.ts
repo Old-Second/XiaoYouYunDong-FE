@@ -84,6 +84,24 @@ const config = {
           },
         },
       });
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
+      // chain.merge({
+      //   plugin: {
+      //     install: {
+      //       plugin: import('terser-webpack-plugin'),
+      //       args: [
+      //         {
+      //           terserOptions: {
+      //             compress: true, // 默认使用terser压缩
+      //             // mangle: false,
+      //             keep_classnames: true, // 不改变class名称
+      //             keep_fnames: true, // 不改变函数名称
+      //           },
+      //         },
+      //       ],
+      //     },
+      //   },
+      // });
     },
   },
   h5: {
